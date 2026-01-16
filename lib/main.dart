@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:paywall/splash/ui/pages/splash_page.dart';
 
-void main() {
+import 'injection.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await configureDependencies();
   runApp(const MainApp());
 }
 
@@ -9,12 +14,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
-    );
+    return const MaterialApp(home: SplashPage());
   }
 }
