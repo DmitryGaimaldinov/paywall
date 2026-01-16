@@ -12,8 +12,7 @@
 import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
 import 'package:paywall/internal/infra/services/paywall_service.dart' as _i867;
-import 'package:paywall/internal/infra/services/shared_prefs_module.dart'
-    as _i587;
+import 'package:paywall/shared_prefs_module.dart' as _i587;
 import 'package:paywall/onboarding/usecase/onboarding/onboarding_cubit.dart'
     as _i203;
 import 'package:paywall/paywall/usecase/paywall/paywall_cubit.dart' as _i872;
